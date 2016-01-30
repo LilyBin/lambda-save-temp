@@ -4,7 +4,7 @@ const TMP = 'lilybin-source-files';
 
 exports.handler = function(event, context) {
     var t = process.hrtime();
-    var id = new Date().valueOf() + '-' + Math.random().toString(36).substr(2);
+    var id = Date.now() + '-' + Math.random().toString(36).substr(2);
     s3.putObject({
         Bucket: TMP,
         Key: id + '.ly',
