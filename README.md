@@ -1,4 +1,4 @@
-lamdba-save-temp
+lambda-save-temp
 ================
 
 This saves the input file temporarily to a bucket. In LilyBin this is used to
